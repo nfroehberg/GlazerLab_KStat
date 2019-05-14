@@ -1,1 +1,1 @@
-# GlazerLab_Kartoffelstat
+# KStat open source potentiostat
