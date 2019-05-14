@@ -1,0 +1,4 @@
+20181108: 	default
+20181109: 	added end of scan and end of experiment signal to linear sweep method
+20181109b: 	Changed idle method to take numeric input (idle_volts as uint16 DAC index) and set the idle voltage to that.
+		also changed it from having only switches to CE and 2 Electrode (PB3 and PB5) to also working and control (PB2 and PB4)

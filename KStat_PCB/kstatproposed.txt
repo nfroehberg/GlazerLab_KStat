@@ -1,0 +1,25 @@
+Raise Vref from 3V to 4V
+Move all analog from 3.3V to 5V
+
+MAX6126
+	Need 4.096V version
+OPA350
+	5V-tolerant
+MAX5443
+	Replace with MAX5441
+MAX4477
+	5V-tolerant
+ADS1255
+	Analog stays at 5V; digital stays at 3.3V
+LMP7702
+	5V-tolerant
+LMP7715MF
+	5V-tolerant
+MAX4737
+	5V-tolerant
+LMP7721
+	5V-tolerant
+MAX4617
+	5V-tolerant
+
+ATXMEGA stays in 3.3V

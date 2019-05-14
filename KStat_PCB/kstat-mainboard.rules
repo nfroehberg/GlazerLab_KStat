@@ -1,0 +1,176 @@
+
+(rules PCB dstat-mainboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 141)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.3)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 127.2)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 254.2 (type default_Analogue))
+    (clear 203.4 (type default_power))
+    (clear 203.4 (type default_reference))
+    (clear 31.8 (type smd_smd))
+    (clear 254.2 (type smd_Analogue))
+    (clear 203.4 (type smd_power))
+    (clear 203.4 (type smd_reference))
+    (clear 254.2 (type "kicad_default"_Analogue))
+    (clear 203.4 (type "kicad_default"_power))
+    (clear 203.4 (type "kicad_default"_reference))
+    (clear 254.2 (type Analogue_Analogue))
+    (clear 254.2 (type Analogue_power))
+    (clear 254.2 (type Analogue_reference))
+    (clear 203.4 (type power_power))
+    (clear 203.4 (type power_reference))
+    (clear 203.4 (type reference_reference))
+  )
+  (padstack "Via[0-1]_508:203.2_um"
+    (shape
+      (circle F.Cu 508.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 508.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_508:330.2_um"
+    (shape
+      (circle F.Cu 508.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 508.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_508:203.2_um" "Via[0-1]_508:203.2_um" default
+  )
+  (via 
+    "Via[0-1]_508:330.2_um" "Via[0-1]_508:330.2_um" default
+  )
+  (via 
+    "Via[0-1]_508:203.2_um-kicad_default" "Via[0-1]_508:203.2_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_508:330.2_um-kicad_default" "Via[0-1]_508:330.2_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_508:203.2_um-Analogue" "Via[0-1]_508:203.2_um" Analogue
+  )
+  (via 
+    "Via[0-1]_508:330.2_um-Analogue" "Via[0-1]_508:330.2_um" Analogue
+  )
+  (via 
+    "Via[0-1]_508:203.2_um-power" "Via[0-1]_508:203.2_um" power
+  )
+  (via 
+    "Via[0-1]_508:330.2_um-power" "Via[0-1]_508:330.2_um" power
+  )
+  (via 
+    "Via[0-1]_508:203.2_um-reference" "Via[0-1]_508:203.2_um" reference
+  )
+  (via 
+    "Via[0-1]_508:330.2_um-reference" "Via[0-1]_508:330.2_um" reference
+  )
+  (via_rule
+    default "Via[0-1]_508:203.2_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_508:203.2_um-kicad_default"
+  )
+  (via_rule
+    Analogue "Via[0-1]_508:330.2_um-Analogue"
+  )
+  (via_rule
+    power "Via[0-1]_508:330.2_um-power"
+  )
+  (via_rule
+    reference "Via[0-1]_508:330.2_um-reference"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /WSHIELD "Net-(C14-Pad1)" /ADC /COUNTER "/DAC_OUT" /DM /DP /PB2
+    /PB3 /PB4 /PB5 /PB6 /PB7 /PC0 /PC1 /PC2
+    /PC3 /PC4 /PC5 /PC7 /PD0 /PD1 /PD2 /PD3
+    /PD4 /PD5 "/PDI_CLK" "/PDI_DATA" /PE0 /PE1 /PE2 /PE3
+    /PE4 /PE5 /PE6 /PE7 /PF0 /PF1 /PF2 /PF3
+    /PF4 /PF5 /PF6 /PF7 /REFERENCE "/REF_V" /WORKING "Net-(C4-Pad1)"
+    "Net-(C7-Pad1)" "Net-(C7-Pad2)" "Net-(C10-Pad2)" "Net-(C12-Pad1)" "Net-(C13-Pad2)" "Net-(C16-Pad1)" "Net-(C19-Pad1)" "Net-(C20-Pad2)"
+    "Net-(C21-Pad2)" "Net-(C26-Pad1)" "Net-(C26-Pad2)" "Net-(C37-Pad1)" "Net-(C38-Pad1)" "Net-(C39-Pad1)" "Net-(C40-Pad1)" "Net-(C41-Pad1)"
+    "Net-(C42-Pad1)" "Net-(C43-Pad1)" "Net-(C44-Pad2)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R4-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad1)"
+    "Net-(R10-Pad1)" "Net-(R18-Pad1)" "Net-(R21-Pad1)" "Net-(R22-Pad1)" "Net-(R23-Pad1)" "Net-(R24-Pad1)" "Net-(U3-Pad2)" "Net-(U10-Pad8)"
+    "Net-(U3-Pad10)" "Net-(U4-Pad2)" "Net-(U6-Pad4)" "Net-(U6-Pad3)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(C56-Pad2)" "Net-(C57-Pad2)"
+    /RSHIELD "Net-(C58-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Analogue
+    (clearance_class Analogue)
+    (via_rule Analogue)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    GND +5V "/USB_GND" "/USB_VCC" +3V3 +4.75VR
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 304.8)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class reference
+    +4VR +2VR
+    (clearance_class reference)
+    (via_rule reference)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0  Date: 02/09/2014 6:00:49 PM
+#
+$CMP LMP7702
+K ampliop
+$ENDCMP
+#
+$CMP LMP7715MF
+K ampliop
+$ENDCMP
+#
+$CMP LMP7721
+K ampliop
+$ENDCMP
+#
+$CMP MAX4477
+K ampliop
+$ENDCMP
+#
+$CMP MAX5443
+D +3V, Serial-Input, Voltage-Output, 16-Bit DAC
+K Single DAC 1ch 16bit SPI
+$ENDCMP
+#
+$CMP OPA350
+K ampliop
+$ENDCMP
+#
+#End Doc Library
