@@ -1,3 +1,5 @@
+# Script for measurements with the in-situ KStat housing tethered on a line without using the profiler.
+
 import time, serial, os
 from datetime import datetime
 import KStat_0_1_froehberg_driver  as KStat
