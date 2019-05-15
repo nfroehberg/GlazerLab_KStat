@@ -1,3 +1,5 @@
+# Script for Profiles with the in-situ KStat housing using the water column or sediment profiler
+
 import time, serial, os
 from datetime import datetime
 import KStat_0_1_froehberg_driver  as KStat
@@ -71,15 +73,7 @@ def voltammetry(depth_file, ser2):
                             slope = params['slope'], sample_rate = params['sample_rate'],
                             file = voltammetry_file, plotting = True)
     KStat.idle(ser2, -900)
-    """KStat.linearSweepVoltammetry(ser = ser2, PGA_gain = params['PGA_gain'],
-                                 iv_gain = params['iv_gain'],
-                                 t_preconditioning1 = 30, t_preconditioning2 = 2,
-                                 v_preconditioning1 = -900,
-                                 v_preconditioning2 = -900,
-                                 start =-100, stop = -1000, slope = 1000,
-                                 sample_rate = params['sample_rate'],
-                                 file='LSV', comment='', plotting=False,
-                                 catch = False)"""
+
     return depth_file
 
 def pressure():
