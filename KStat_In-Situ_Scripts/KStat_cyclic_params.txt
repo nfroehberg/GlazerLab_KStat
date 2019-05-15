@@ -1,0 +1,13 @@
+ADSbuffer = 1
+PGA_gain = 2
+iv_gain = POT_GAIN_300K
+t_preconditioning1 = 5
+t_preconditioning2 = 2
+v_preconditioning1 = -900
+v_preconditioning2 = -100
+v1 = -1850
+v2 = -100
+start = -100
+n_scans = 1
+slope = 2900
+sample_rate = 1KHz
