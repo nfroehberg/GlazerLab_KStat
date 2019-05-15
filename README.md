@@ -9,4 +9,5 @@ As it is intended to be used in conjunction with other sensors and manipulators,
 Additional scripts include pH measurement and various tests used during the development.
 
 Adaptations to firmware and PCB design by Stanley Lio.
+
 Development of Python Interface by Nico Fröhberg.
